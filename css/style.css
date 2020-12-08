@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* css starts */
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    font-size: 15px;
+}
+/* making some classes */
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.max-width{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* desiegning starts */
+/* header */
+
+
+
+header{
+    width: 100%;
+    height: 50vh;
+    background-image: url(../img/dd.jpg);
+    background-size: cover;
+    text-align: center;
+    background-attachment: fixed;
+    border-top: 0.3rem solid #5385c1;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+nav ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    margin-left: 0.8rem;
+    text-transform: capitalize;
+}
+
+header a{
+    color: azure;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.someinfo{
+    margin-top: 6rem;
+    color: azure;
+}
+
+.someinfo h1{
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+.someinfo h5{
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-top: 1rem;
+}
+
+
+
+/* info */
+
+.info div{
+    width: 410px;
+    padding: 1rem;  
+    /* border-right: 0.1rem solid #5e8dc3; */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.info hr{
+    background-color:  #5e8dc3;
+    border: 0;
+    width: 0.1rem;
+    height: 160px;
+    margin-top: 30px;
+}
+.infos h2{
+    font-weight: 300;
+    line-height: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #5e8dc3;
+
+}
+.infos p{
+    font-weight: 300;
+    line-height: 1.4rem;
+    margin-bottom: 0.7rem;
+    color: grey;
+    text-align: justify;
+}
+.more{
+    width: 4.3rem;
+    height: 2.3rem;
+    color: #fff;
+    background-color: #5385c1;
+    border: 0;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* persons div  */
+
+.persons{
+    width: 100%;
+    /* height: 70vh; */
+    background-color: #5e8dc3;
+    color: azure;
+    text-align: center;
+    overflow: auto;
+}
+.persons h1{
+    font-weight: 100;
+    font-size: 3.5rem;
+    margin-top: 4rem;
+}
+.persons h4{
+    font-weight: 100;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    color: rgb(240, 240, 240);
+}
+.person{
+    width: 17%;
+    height: 20rem;
+    border: 1px solid #7ea4d1;
+    margin-bottom: 2rem;
+}
+.person img{
+    border-radius: 100%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 75%;
+}
+.person h2{
+    font-weight: 300;
+    text-transform: capitalize;
+}
+.person h3{
+    font-weight: 200;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+/* image gallery */
+.img-gallery{
+    text-align: center;
+}
+.img-gallery h1{
+    font-weight: 200;
+    font-size: 2.5rem;
+    color: #5385c1;
+    margin-top: 6rem;
+}
+.img-gallery h5{
+    font-weight: 200;
+    font-size: 1rem;
+    color:grey;
+}
+.gallery{
+    width: 45%;
+    text-align: justify;
+    margin-top: 4.5rem;
+}
+.gallery h2{
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #5385c1;
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+}
+.gallery h4{
+    font-weight: 200;
+    font-size: 1rem;
+    color:grey;
+    line-height: 1.7rem;
+}
+.gallery button{
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+.footer-hr{
+    width: 85vw;
+    height: 0.5px;
+    border: 0;
+    background-color: gray;
+    margin: 0 auto;
+}
+footer p{
+    margin-top: 35px;
+    margin-bottom: 40px;
+    color: rgb(218, 218, 218);
+}
+footer div{
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+footer div span{
+    margin-left: 20px;
+    color: #5385c1;
+}
+
+
+
+/* media quarry starts */
+@media only screen and (max-width:1277px){
+    html{
+        font-size: 14px;
+    }
+    .person{
+        width: 43%;
+        height: 20rem;
+        border: 1px solid #7ea4d1;
+        margin-bottom: 2rem;
+    }
+    .person img{
+        border-radius: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 33%;
+    }
+    .gallery{
+        width: 100%;
+
+    }
+    .gallery img{
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width:557px){
+    .person{
+        width: 100%;
+        height: 20rem;
+        border: 1px solid #7ea4d1;
+        margin-bottom: 2rem;
+    }
+}
